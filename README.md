@@ -1,0 +1,1 @@
+# Arsitektur-Multiple-Prosessor-dan-Multiprosessor-Symmetric
