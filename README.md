@@ -10,11 +10,17 @@ Penjelasan dari gambar arsitektur
 
 1. Arsitektur Multiple Processor
 
+   ![Screenshot 2025-04-28 134138](https://github.com/user-attachments/assets/48eb1718-de5b-42eb-adac-3368dc31a375)
+
+
 Pada gambar pertama, ditunjukkan arsitektur Multiple Processor. Dalam sistem ini, terdapat banyak CPU yang masing-masing memiliki cache L1 sendiri. Semua CPU tersebut dihubungkan melalui sebuah jalur utama atau sistem interkoneksi. Jalur ini menghubungkan CPU ke berbagai komponen penting seperti Shared L2 Cache, Memory Controller, Main Memory (RAM), Interrupt Controller, dan IPC (Inter-Process Communication).
 
 Di arsitektur Multiple Processor, setiap CPU dapat mengerjakan tugasnya masing-masing. Namun, mereka perlu berkomunikasi melalui jalur bersama agar tidak terjadi tabrakan atau kekacauan dalam penggunaan memori. Karena itu, ada IPC yang membantu mengatur komunikasi antar CPU, serta Interrupt Controller yang mengatur sinyal gangguan dari perangkat luar. Model ini biasanya digunakan untuk sistem yang sangat besar, seperti server besar, superkomputer, atau pusat data. Sistem ini memungkinkan banyak pekerjaan berat bisa diselesaikan secara paralel, meskipun butuh pengaturan komunikasi yang cukup rumit antar CPU.
 
 2. Arsitektur Multiprocessor symmetric
+
+   ![Screenshot 2025-04-28 134224](https://github.com/user-attachments/assets/b9d1a476-fffe-4099-a71c-1eac8fda222f)
+
 
 pada gambar kedua, diperlihatkan arsitektur Multiprocessor Symmetric (SMP). Di sini terdapat dua CPU, yaitu Processor A dan Processor B, yang bekerja dengan status yang sama. Keduanya bisa langsung mengakses memori utama dan perangkat I/O tanpa harus ada pembagian peran khusus. Baik Processor A maupun Processor B dapat menjalankan Operating System dan User Thread secara mandiri.
 
